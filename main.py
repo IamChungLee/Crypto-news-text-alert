@@ -59,7 +59,7 @@ if change_in_percent >= 5:
         headlines.append(list(news_result['articles'])[i]['title'])
         briefs.append(list(news_result['articles'])[i]['description'])
 
-## Use https://www.twilio.com API to send alerts to subcriber------------------------------------------------------------
+# Use https://www.twilio.com API to send alerts to subcriber------------------------------------------------------------
 
     account_sid = os.environ.get("TWILIO_SID")
     auth_token = os.environ.get("TWILIO_TOKEN")
