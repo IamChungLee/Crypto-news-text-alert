@@ -2,9 +2,10 @@ import requests
 from twilio.rest import Client
 import os
 
+#SUBCRIBER INPUTS
 SYMBOL = "ETH"
 CRYPTO = "ethereum"
-
+PHONE_NUMBER = os.environ.get("MY_NUMBER")
 
 #Use https://www.alphavantage.co------------------------------------------------------------
 # Calculate change in CRYPTO closing prices from daily closes obtained from alphavantage api
@@ -80,6 +81,6 @@ if change_in_percent >= 5:
             .create(
             body=article,
             from_=os.environ.get("TWILIO_NUMBER"),
-            to=os.environ.get("MY_NUMBER")
+            to=PHONE_NUMBER
         )
         print(message.status)
