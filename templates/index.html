@@ -6,18 +6,33 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="static/styles.css" rel="stylesheet">
+    <title>CRYPT-O-LERT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
-        <h1>Stay up to date with your favorite crypto's latest news</h1>
-        <h3>Get up-to-the-second news sent to your phone when your cryptos rises or falls significantly.</h3>
-        <form action="/" method="post">
-            <label>All we need is the crypto symbol (in CAPS):</label>
-            <input type="text" placeholder="Crypto symbol" name="symbol">
-            <label>and your phone number:</label>
-            <input type="text" placeholder="phone number" name="phone">
-            <button type="submit">SUBMIT</button>
-        </form>
+        <div class="nav-bar">
+            <h3>CRYPT-O-LERT</h3>
+        </div>
+        <div class="content">
+            <div class="intro">
+                <h1>Stay up to date with your favorite crypto's latest news</h1>
+            </div>
+            <div class="main-content">
+                    <h3>Get up-to-the-second news sent to your phone when your cryptos rises or falls significantly
+                    and all we need is the crypto symbol and your phone number.</h3>
+                    <form action="/" method="post">
+                        <input type="text" placeholder="Crypto symbol" name="symbol">
+                        <br>
+                        <input type="text" placeholder="phone number" name="phone">
+                        <br>
+                        <button type="submit">SUBMIT</button>
+                    </form>
+            </div>
+        </div>
     </div>
 
 </body>

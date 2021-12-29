@@ -17,7 +17,7 @@ data = pandas.read_csv('digital_currency_list.csv')
 def home():
     if request.method == 'POST':
         #SUBCRIBER INPUTS
-        SYMBOL = request.form["symbol"]
+        SYMBOL = request.form["symbol"].upper()
         PHONE_NUMBER = request.form["phone"]
         #goes through datafram to see if the symbol is there
         if data['symbol'].str.contains(SYMBOL).any():
